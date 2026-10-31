@@ -1,7 +1,7 @@
 # STEP SEM-3 · CodInClub | Powered by BridgeLabz
 ## Comprehensive Category C Practice & Assignment Repository
 
-This repository contains fully tested, verified, and production-quality Java solutions for the **STEP SEM-3 Category C** modules covering **Abstraction, Abstract Classes, Interfaces, and Data Structures**.
+This repository contains fully tested, verified, and production-quality Java solutions for the **STEP SEM-3 Category C** modules covering **Abstraction & Interfaces, Data Structures, and Sorting Algorithms**.
 
 Repository URL: `https://github.com/srujan1-creator/stepassignsem3.git`
 
@@ -55,33 +55,52 @@ stepassignsem3/
 │   ├── QLA_SOLUTIONS.md                         # Quiz (Q1–Q20) & Concept Answers (Q1–Q10)
 │   └── README.md
 │
-└── data-structure-assignment/                    # Module 2: Data Structures (Assignment)
-    ├── ExamScoreBandCounter.java                # Problem 4: Exam Score Band Counter (Binary Search)
-    ├── ClassAttendanceTracker.java              # Problem 6: Class Attendance Tracker (Streaming Streak)
-    ├── SecondBestScore.java                     # Problem 7: Second-Best Score (O(N) Non-Sorting)
-    ├── DutyRosterRotation.java                  # Problem 8: Duty Roster Rotation (Modulo Shift)
-    ├── BusiestBusRow.java                       # Problem 10: Busiest Bus Row (2D Matrix Search)
+├── data-structure-assignment/                    # Module 2: Data Structures (Assignment)
+│   ├── ExamScoreBandCounter.java                # Problem 4: Exam Score Band Counter (Binary Search)
+│   ├── ClassAttendanceTracker.java              # Problem 6: Class Attendance Tracker (Streaming Streak)
+│   ├── SecondBestScore.java                     # Problem 7: Second-Best Score (O(N) Non-Sorting)
+│   ├── DutyRosterRotation.java                  # Problem 8: Duty Roster Rotation (Modulo Shift)
+│   ├── BusiestBusRow.java                       # Problem 10: Busiest Bus Row (2D Matrix Search)
+│   ├── Problem4_ExamScoreBandCounter/
+│   ├── Problem6_ClassAttendanceTracker/
+│   ├── Problem7_SecondBestScore/
+│   ├── Problem8_DutyRosterRotation/
+│   ├── Problem10_BusiestBusRow/
+│   └── README.md
+│
+└── sorting-algorithms/                           # Module 3: Sorting Algorithms (Assignment)
+    ├── HeightLineUp.java                        # Problem 1: The Height Line-Up (Bubble Sort with Early Stop)
+    ├── PrizeTable.java                          # Problem 2: The Prize Table (Selection Sort Descending)
+    ├── LibraryBookShelf.java                    # Problem 3: The Library Book Shelf (Insertion Sort)
+    ├── QueueInOrder.java                        # Problem 4: Is the Queue in Order? (Linear Scan)
+    ├── DiceThrowTally.java                      # Problem 5: The Dice Throw Tally (Counting Sort)
+    ├── Problem1_TheHeightLineUp/
+    ├── Problem2_ThePrizeTable/
+    ├── Problem3_TheLibraryBookShelf/
+    ├── Problem4_IsTheQueueInOrder/
+    ├── Problem5_TheDiceThrowTally/
     └── README.md
 ```
 
 ---
 
-## Module Overview
+## Module 3 Overview: Sorting Algorithms
 
-### 1. Abstraction & Interfaces (`practice/` and `assignment/`)
-- Demonstrates clean polymorphic hierarchies, abstract class contracts, capability interfaces (`Insurable`, `BusTransportUser`, `NightServiceCapable`, `SaverModeCapable`), and the Open/Closed Principle.
-- Includes theoretical evaluation answers in `assignment/QLA_SOLUTIONS.md`.
+All sorting algorithms are implemented from scratch without using `Arrays.sort`.
 
-### 2. Data Structures (`data-structure-practice/` and `data-structure-assignment/`)
-- Features 10 practice problems and 5 core assignment problems spanning arrays, two-pointer algorithms, number theory, binary search, and 2D matrix transformations.
-- Optimal time & space complexities adhered to (e.g., $O(\log N)$ binary search, $O(1)$ auxiliary space without sorting).
-- Comprehensive theoretical assessment covering String immutability, pass-by-value, memory models, and encapsulation in `data-structure-practice/QLA_SOLUTIONS.md`.
+| Problem | Algorithm | Strategy & Highlights | Time Complexity | Auxiliary Space |
+| :--- | :--- | :--- | :--- | :--- |
+| **Problem 1: Height Line-Up** | Bubble Sort | Sweeps adjacent pairs; prints every pass; terminates early if 0 swaps occur | Best: $O(N)$, Worst: $O(N^2)$ | $O(1)$ |
+| **Problem 2: Prize Table** | Selection Sort | Sorts marks descending; swaps maximum into place; returns count of actual swaps | $O(N^2)$ | $O(1)$ |
+| **Problem 3: Library Book Shelf** | Insertion Sort | Inserts each incoming book into its sorted partition; prints state after each placement | Best: $O(N)$, Worst: $O(N^2)$ | $O(1)$ |
+| **Problem 4: Queue In Order** | Order Scan | Identifies the first inversion index where `tokens[i] < tokens[i-1]`, or returns -1 | $O(N)$ | $O(1)$ |
+| **Problem 5: Dice Throw Tally** | Counting Sort | Counts occurrences of values 1–6; reconstructs sorted array with zero element comparisons | $O(N + K)$ ($K=6$) | $O(K)$ |
 
 ---
 
-## Compilation
+## Build & Test Instructions
 
 ```bash
 # Compile all modules
-javac practice/*.java assignment/*.java data-structure-practice/*.java data-structure-assignment/*.java
+javac practice/*.java assignment/*.java data-structure-practice/*.java data-structure-assignment/*.java sorting-algorithms/*.java
 ```
