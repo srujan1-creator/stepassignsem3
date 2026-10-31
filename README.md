@@ -1,7 +1,7 @@
 # STEP SEM-3 · CodInClub | Powered by BridgeLabz
-## Category C: Abstraction & Interfaces — Practice & Assignment Solutions
+## Comprehensive Category C Practice & Assignment Repository
 
-This repository contains fully tested, verified, and production-quality Java solutions for the **STEP SEM-3 Category C** module on **Abstraction, Abstract Classes, and Interfaces**.
+This repository contains fully tested, verified, and production-quality Java solutions for the **STEP SEM-3 Category C** modules covering **Abstraction, Abstract Classes, Interfaces, and Data Structures**.
 
 Repository URL: `https://github.com/srujan1-creator/stepassignsem3.git`
 
@@ -13,100 +13,75 @@ Repository URL: `https://github.com/srujan1-creator/stepassignsem3.git`
 stepassignsem3/
 ├── .gitignore
 ├── README.md
-├── practice/                                     # PDF 1 — Practice Coding Problems
+│
+├── practice/                                     # Module 1: Abstraction & Interfaces (Practice)
 │   ├── MovieTicketCounter.java                  # Problem 1: Movie Ticket Counter
 │   ├── ParcelShippingDesk.java                  # Problem 2: Parcel Shipping Desk
 │   ├── CollegeFeeCounter.java                   # Problem 3: College Fee Counter
 │   ├── CityCabFareMeter.java                    # Problem 4: City Cab Fare Meter
 │   ├── HomeApplianceEnergyReport.java           # Problem 5: Home Appliance Energy Report
 │   ├── Problem1_MovieTicketCounter/
-│   │   └── MovieTicketCounter.java
 │   ├── Problem2_ParcelShippingDesk/
-│   │   └── ParcelShippingDesk.java
 │   ├── Problem3_CollegeFeeCounter/
-│   │   └── CollegeFeeCounter.java
 │   ├── Problem4_CityCabFareMeter/
-│   │   └── CityCabFareMeter.java
 │   ├── Problem5_HomeApplianceEnergyReport/
-│   │   └── HomeApplianceEnergyReport.java
 │   └── README.md
 │
-└── assignment/                                   # PDF 2 — Assignment Coding & Theory
-    ├── GardenPlotAreaReport.java                # Problem 1: Garden Plot Area Report
-    ├── WeeklyStaffPay.java                      # Problem 2: Weekly Staff Pay
-    ├── LibraryLateFineCounter.java              # Problem 3: Library Late Fine Counter
-    ├── ElectricityConnectionBilling.java        # Problem 4: Electricity Connection Billing
-    ├── TravelBookingWithCommonFee.java          # Problem 5: Travel Booking with a Common Fee
-    ├── Problem1_GardenPlotAreaReport/
-    │   └── GardenPlotAreaReport.java
-    ├── Problem2_WeeklyStaffPay/
-    │   └── WeeklyStaffPay.java
-    ├── Problem3_LibraryLateFineCounter/
-    │   └── LibraryLateFineCounter.java
-    ├── Problem4_ElectricityConnectionBilling/
-    │   └── ElectricityConnectionBilling.java
-    ├── Problem5_TravelBookingWithCommonFee/
-    │   └── TravelBookingWithCommonFee.java
-    ├── QLA_SOLUTIONS.md                         # Complete Part B Quiz & Part C Concept Answers
+├── assignment/                                   # Module 1: Abstraction & Interfaces (Assignment)
+│   ├── GardenPlotAreaReport.java                # Problem 1: Garden Plot Area Report
+│   ├── WeeklyStaffPay.java                      # Problem 2: Weekly Staff Pay
+│   ├── LibraryLateFineCounter.java              # Problem 3: Library Late Fine Counter
+│   ├── ElectricityConnectionBilling.java        # Problem 4: Electricity Connection Billing
+│   ├── TravelBookingWithCommonFee.java          # Problem 5: Travel Booking with a Common Fee
+│   ├── Problem1_GardenPlotAreaReport/
+│   ├── Problem2_WeeklyStaffPay/
+│   ├── Problem3_LibraryLateFineCounter/
+│   ├── Problem4_ElectricityConnectionBilling/
+│   ├── Problem5_TravelBookingWithCommonFee/
+│   ├── QLA_SOLUTIONS.md                         # Complete Part B Quiz & Part C Concept Answers
+│   └── README.md
+│
+├── data-structure-practice/                      # Module 2: Data Structures (Practice)
+│   ├── VowelConsonantCounter.java               # Problem 1: Vowel and Consonant Counter
+│   ├── WordReverserPalindrome.java              # Problem 2: Word Reverser & Palindrome Checker
+│   ├── EvenOddCounter.java                      # Problem 3: Even and Odd Numbers in a List
+│   ├── InPlaceArrayReversal.java                # Problem 4: In-Place Array Reversal
+│   ├── DigitSumAndReversal.java                 # Problem 5: Digit Sum & Number Reversal
+│   ├── PrimeNumberChecker.java                  # Problem 6: Prime Number Checker
+│   ├── FactorialCalculation.java                # Problem 7: Factorial Calculation
+│   ├── StudentGradeAssignment.java              # Problem 8: Student Grade Assignment
+│   ├── LeapYearDetector.java                    # Problem 9: Leap Year Detector
+│   ├── StudentResultCardGenerator.java          # Problem 10: Student Result Card Generator
+│   ├── QLA_SOLUTIONS.md                         # Quiz (Q1–Q20) & Concept Answers (Q1–Q10)
+│   └── README.md
+│
+└── data-structure-assignment/                    # Module 2: Data Structures (Assignment)
+    ├── ExamScoreBandCounter.java                # Problem 4: Exam Score Band Counter (Binary Search)
+    ├── ClassAttendanceTracker.java              # Problem 6: Class Attendance Tracker (Streaming Streak)
+    ├── SecondBestScore.java                     # Problem 7: Second-Best Score (O(N) Non-Sorting)
+    ├── DutyRosterRotation.java                  # Problem 8: Duty Roster Rotation (Modulo Shift)
+    ├── BusiestBusRow.java                       # Problem 10: Busiest Bus Row (2D Matrix Search)
     └── README.md
 ```
 
 ---
 
-## Part 1: Practice Problems Summary (PDF 1)
+## Module Overview
 
-| Problem | Title | Key OOP Concepts | Core Abstractions / Interfaces |
-| :--- | :--- | :--- | :--- |
-| **Problem 1** | **Movie Ticket Counter** | Non-instantiable abstract ticket base class, shared convenience fee | `abstract class Ticket`, `RegularTicket`, `PremiumTicket`, `ReclinerTicket` |
-| **Problem 2** | **Parcel Shipping Desk** | Capability segregation, optional insurance interface | `interface Insurable`, `abstract class Parcel`, `StandardParcel`, `ExpressParcel`, `FragileParcel` |
-| **Problem 3** | **College Fee Counter** | Ability-based transport surcharge without checking type names | `interface BusTransportUser`, `abstract class Student`, `DayScholar`, `Hosteller`, `ScholarshipStudent` |
-| **Problem 4** | **City Cab Fare Meter** | Universal minimum fare rule, capability-gated night service | `interface NightServiceCapable`, `abstract class Cab`, `MiniCab`, `SedanCab`, `SuvCab` |
-| **Problem 5** | **Home Appliance Energy Report** | Energy calculation hierarchy, capability-supported saver mode | `interface SaverModeCapable`, `abstract class Appliance`, `Fridge`, `AirConditioner`, `Television`, `WashingMachine` |
+### 1. Abstraction & Interfaces (`practice/` and `assignment/`)
+- Demonstrates clean polymorphic hierarchies, abstract class contracts, capability interfaces (`Insurable`, `BusTransportUser`, `NightServiceCapable`, `SaverModeCapable`), and the Open/Closed Principle.
+- Includes theoretical evaluation answers in `assignment/QLA_SOLUTIONS.md`.
 
----
-
-## Part 2: Assignment Problems Summary (PDF 2)
-
-| Problem | Title | Key OOP Concepts | Core Abstractions / Subclasses |
-| :--- | :--- | :--- | :--- |
-| **Problem 1** | **Garden Plot Area Report** | Open/Closed Principle, reporting closed for modification | `abstract class GardenPlot`, `CirclePlot`, `RectanglePlot`, `TrianglePlot` |
-| **Problem 2** | **Weekly Staff Pay** | Non-instantiable base type, overtime policy encapsulation | `abstract class StaffMember`, `FullTimeStaff`, `HourlyStaff`, `InternStaff` |
-| **Problem 3** | **Library Late Fine Counter** | Mandatory fine calculation contract, capped penalty | `abstract class LibraryItem`, `BookItem`, `DvdItem`, `MagazineItem` |
-| **Problem 4** | **Electricity Connection Billing** | Slab & commercial pricing, industrial minimum bill | `abstract class ElectricityConnection`, `HomeConnection`, `ShopConnection`, `FactoryConnection` |
-| **Problem 5** | **Travel Booking with Common Fee**| Template method pattern, single-source booking fee | `abstract class TravelBooking`, `BusBooking`, `TrainBooking`, `FlightBooking` |
+### 2. Data Structures (`data-structure-practice/` and `data-structure-assignment/`)
+- Features 10 practice problems and 5 core assignment problems spanning arrays, two-pointer algorithms, number theory, binary search, and 2D matrix transformations.
+- Optimal time & space complexities adhered to (e.g., $O(\log N)$ binary search, $O(1)$ auxiliary space without sorting).
+- Comprehensive theoretical assessment covering String immutability, pass-by-value, memory models, and encapsulation in `data-structure-practice/QLA_SOLUTIONS.md`.
 
 ---
 
-## Part 3: Theory & Assessment (PDF 2 Parts B & C)
+## Compilation
 
-The comprehensive theoretical solutions are documented in [`assignment/QLA_SOLUTIONS.md`](assignment/QLA_SOLUTIONS.md):
-- **Part B — Multiple Choice Quiz:** Q1 to Q10 with correct options and in-depth rationales.
-- **Part C — Concept Questions:** Q1 to Q5 with detailed answers, real-life examples (ATM), differences between abstraction and encapsulation, abstract class constructors, prohibited abstract modifiers (`private`, `static`, `final`), and the diamond problem in Java.
-
----
-
-## Build & Test Instructions
-
-### Compile All Solutions
 ```bash
-# Compile practice problems
-javac practice/*.java
-
-# Compile assignment problems
-javac assignment/*.java
-```
-
-### Run Sample Verification
-```bash
-# Run Practice Problem 1
-java -cp practice MovieTicketCounter
-
-# Run Practice Problem 2
-java -cp practice ParcelShippingDesk
-
-# Run Assignment Problem 1
-java -cp assignment GardenPlotAreaReport
-
-# Run Assignment Problem 5
-java -cp assignment TravelBookingWithCommonFee
+# Compile all modules
+javac practice/*.java assignment/*.java data-structure-practice/*.java data-structure-assignment/*.java
 ```
